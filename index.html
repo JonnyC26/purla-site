@@ -28,7 +28,7 @@
 <body>
 
 <h1>Purla Privacy Policy</h1>
-<p class="updated">Last updated: 8 August 2026</p>
+<p class="updated">Last updated: 21 September 2026</p>
 
 <p>Purla scans product barcodes and ingredient labels and shows you information about
 what's in them. This policy explains what we collect, why, and what you can do about it.</p>
@@ -41,9 +41,16 @@ Contact: <a href="mailto:getpurla@gmail.com">getpurla@gmail.com</a></p>
 <ul>
   <li><strong>Account information.</strong> If you create an account we collect your email
       address and store an account identifier. We use Google Firebase Authentication for this.</li>
+  <li><strong>Guest accounts.</strong> You can continue as a guest without providing an
+      email address. Guest use creates an anonymous account through Firebase Authentication,
+      and your scan history is stored against that anonymous user identifier.</li>
+  <li><strong>Diet preferences.</strong> If you set them, we store diet preferences such as
+      vegan, vegetarian, and gluten-free, and use them to show diet warnings on products
+      you scan.</li>
   <li><strong>Your scan history.</strong> When you scan a product we store a record of it —
       the product, the score we calculated, and when you scanned it — so you can see it again
-      later. This is linked to your account.</li>
+      later. This is linked to your account, including guest accounts identified by an
+      anonymous user ID.</li>
   <li><strong>Photographs you take.</strong> When a product isn't in any database, you can
       photograph its ingredients label so we can read it. You can also add a photo of the
       front of the pack.</li>
@@ -52,8 +59,8 @@ Contact: <a href="mailto:getpurla@gmail.com">getpurla@gmail.com</a></p>
   <li><strong>Technical information.</strong> Our servers keep short-lived logs containing IP
       addresses and request details, used to operate the service and prevent abuse.</li>
 </ul>
-<p>We do not collect your name, address, phone number, payment details, contacts, location,
-or health information.</p>
+<p>We do not collect your name, address, phone number, payment details, contacts, or
+location.</p>
 
 <h2>How we use photographs — please read this part</h2>
 <div class="callout">
@@ -79,16 +86,18 @@ contains no advertising and no third-party tracking.</p>
       scan history.</li>
   <li><strong>Railway</strong> — hosting; runs our servers.</li>
   <li><strong>Anthropic</strong> — AI; reads ingredient photographs and writes product summaries.</li>
-  <li><strong>Open Food Facts and Open Beauty Facts</strong> — open product databases we query
+  <li><strong>USDA FoodData Central and Open Food Facts</strong> — product databases we query
       by barcode.</li>
 </ul>
 
 <h2>Where product information comes from</h2>
-<p>Product data comes from Open Food Facts and Open Beauty Facts, open databases maintained by
-contributors worldwide, and from ingredient labels read from photographs. Ingredient
-assessments are based on European Union cosmetic regulation and published scientific
-assessments.</p>
-<p>Purla is not medical advice. It reports what is on a label and what regulators say about it.
+<p>Product data comes from USDA FoodData Central and Open Food Facts, with USDA preferred
+when both have a match, and from ingredient labels read from photographs. The photograph
+path reads ingredients only and cannot produce the 0–100 score without nutrition data.
+Scores come from nutrition data, detected additives, and confirmed organic status when
+those are available. Organic status is not required for a score, and not every product
+has all of this information.</p>
+<p>Purla is not medical advice. It reports a score and what is on a label.
 Whether a product is suitable for you depends on things a label cannot tell us.</p>
 
 <h2>How long we keep things</h2>
