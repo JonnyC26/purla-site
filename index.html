@@ -28,7 +28,7 @@
 <body>
 
 <h1>Purla Privacy Policy</h1>
-<p class="updated">Last updated: 21 September 2026</p>
+<p class="updated">Last updated: 29 September 2026</p>
 
 <p>Purla scans product barcodes and ingredient labels and shows you information about
 what's in them. This policy explains what we collect, why, and what you can do about it.</p>
@@ -65,7 +65,9 @@ location.</p>
 <h2>How we use photographs — please read this part</h2>
 <div class="callout">
 <p><strong>Ingredients photographs</strong> are sent to Anthropic, an AI provider, to read the
-text on the label. We do not keep the photograph after reading it. We keep the ingredient text.</p>
+text on the label. Purla does not keep the photograph after it has been processed. We keep the
+ingredient text, and it is added to the shared product database so that other people who scan
+that product can see those ingredients.</p>
 <p><strong>Front-of-pack photographs are stored and shared with all users of Purla.</strong>
 If you add a photo of a product, other people who scan that product will see your photo. Only
 add photos of the product itself. Do not include yourself, other people, or anything private
@@ -88,6 +90,8 @@ contains no advertising and no third-party tracking.</p>
   <li><strong>Anthropic</strong> — AI; reads ingredient photographs and writes product summaries.</li>
   <li><strong>USDA FoodData Central and Open Food Facts</strong> — product databases we query
       by barcode.</li>
+  <li><strong>Cloudflare</strong> — content delivery; serves product images to the app.
+      Cloudflare processes your IP address as part of delivering those images to your device.</li>
 </ul>
 
 <h2>Where product information comes from</h2>
@@ -103,7 +107,10 @@ Whether a product is suitable for you depends on things a label cannot tell us.<
 <h2>How long we keep things</h2>
 <ul>
   <li>Your account and scan history are kept until you delete your account.</li>
-  <li>Cached product information is kept for up to 30 days and then refreshed.</li>
+  <li>Product information looked up from product databases is cached for up to 30 days and then
+      refreshed. Product information created from a photographed ingredients label is kept in
+      the shared product database with no fixed expiry, so that others who scan the product
+      can see it. You can contact us to request removal.</li>
   <li>Server logs are kept for a short period for operational purposes.</li>
   <li>Data may persist in backups for a limited period after deletion.</li>
 </ul>
