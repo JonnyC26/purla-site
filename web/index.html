@@ -41,7 +41,8 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0
 .note{font-size:13px;color:var(--muted);margin-top:14px}
 .stage{display:flex;justify-content:center}
 .hero-shot{width:100%;max-width:360px;height:auto;display:block;border-radius:0 0 0 0}
-.shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:900px;margin:0 auto}
+.shots{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;max-width:900px;margin:0 auto}
+.shots figure{flex:0 1 calc((100% - 44px)/3)}
 .shots img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line)}
 .shots figure{margin:0}
 .shots figcaption{font-size:14px;color:var(--muted);margin-top:10px;text-align:center}
@@ -67,7 +68,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px;font-size:14px;color
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
 footer a{color:var(--muted)}
 .flinks{display:flex;gap:20px;flex-wrap:wrap}
-@media(max-width:900px){.grid,.shots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.shots figure{flex-basis:calc((100% - 22px)/2)}}
 @media(max-width:760px){
  .hero .wrap,.honest .wrap{grid-template-columns:minmax(0,1fr);gap:36px}
  .hero .wrap{padding-top:16px}
@@ -150,7 +151,6 @@ footer a{color:var(--muted)}
         <figure><img src="img/breakdown.jpg" width="540" height="1170" loading="lazy" alt="Score breakdown screen"><figcaption>Score breakdown</figcaption></figure>
         <figure><img src="img/diet.jpg" width="540" height="1170" loading="lazy" alt="Diet alerts screen"><figcaption>Diet alerts</figcaption></figure>
         <figure><img src="img/search.jpg" width="540" height="1170" loading="lazy" alt="Search screen"><figcaption>Search</figcaption></figure>
-        <figure><img src="img/history.jpg" width="540" height="1170" loading="lazy" alt="Scan history screen"><figcaption>Scan history</figcaption></figure>
       </div>
     </div>
   </section>
