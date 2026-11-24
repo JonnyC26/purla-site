@@ -41,7 +41,7 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0
 .note{font-size:13px;color:var(--muted);margin-top:14px}
 .stage{display:flex;justify-content:center}
 .hero-shot{width:100%;max-width:360px;height:auto;display:block;border-radius:0 0 0 0}
-.shots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:900px;margin:0 auto}
 .shots img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line)}
 .shots figure{margin:0}
 .shots figcaption{font-size:14px;color:var(--muted);margin-top:10px;text-align:center}
@@ -105,7 +105,7 @@ footer a{color:var(--muted)}
     </div>
 
     <div class="stage">
-      <img class="hero-shot" src="img/hero.jpg" width="620" height="1060" alt="Purla showing why a loaf of bread scored 82 out of 100: nutrition, additives and organic points">
+      <img class="hero-shot" src="img/hero.jpg" width="620" height="1060" alt="Purla result screen: an almond butter scored 94 out of 100, Excellent">
     </div>
   </div>
 </header>
@@ -145,9 +145,11 @@ footer a{color:var(--muted)}
   <section class="band" style="padding-top:0">
     <div class="wrap">
       <div class="shots">
+        <figure><img src="img/score.jpg" width="540" height="1170" loading="lazy" alt="Score screen"><figcaption>Score</figcaption></figure>
+        <figure><img src="img/additives.jpg" width="540" height="1170" loading="lazy" alt="Additive sources screen"><figcaption>Additive sources</figcaption></figure>
         <figure><img src="img/breakdown.jpg" width="540" height="1170" loading="lazy" alt="Score breakdown screen"><figcaption>Score breakdown</figcaption></figure>
-        <figure><img src="img/diet.jpg" width="540" height="1170" loading="lazy" alt="Diet alert screen"><figcaption>Diet alerts</figcaption></figure>
-        <figure><img src="img/search.jpg" width="540" height="1170" loading="lazy" alt="Search results screen"><figcaption>Search</figcaption></figure>
+        <figure><img src="img/diet.jpg" width="540" height="1170" loading="lazy" alt="Diet alerts screen"><figcaption>Diet alerts</figcaption></figure>
+        <figure><img src="img/search.jpg" width="540" height="1170" loading="lazy" alt="Search screen"><figcaption>Search</figcaption></figure>
         <figure><img src="img/history.jpg" width="540" height="1170" loading="lazy" alt="Scan history screen"><figcaption>Scan history</figcaption></figure>
       </div>
     </div>
