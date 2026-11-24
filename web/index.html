@@ -36,8 +36,8 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:end;padding-top:40px;padding-bottom:0}
 .hero .wrap>div:first-child{padding-bottom:72px;align-self:center}
 .lede{font-size:19px;color:var(--muted);margin:20px 0 28px;max-width:34em}
-.soon{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border-radius:12px;padding:12px 18px;font-size:15px;font-weight:500}
-.soon small{display:block;font-size:12px;font-weight:400;opacity:.8}
+.store-badge{display:inline-block;line-height:0}
+.store-badge img{height:54px;width:auto;display:block}
 .note{font-size:13px;color:var(--muted);margin-top:14px}
 .stage{display:flex;justify-content:center}
 .hero-shot{width:100%;max-width:360px;height:auto;display:block;border-radius:0 0 0 0}
@@ -99,10 +99,9 @@ footer a{color:var(--muted)}
     <div>
       <h1>Scan food. See what's inside.</h1>
       <p class="lede">Purla gives packaged food a score from 0 to 100, explains each additive in plain English, and shows the sources behind every rating.</p>
-      <div class="soon">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M8 8v8M12 8v8M16 8v8"/></svg>
-        <span>Coming soon<small>on the App Store for iPhone</small></span>
-      </div>
+      <a class="store-badge" href="https://apps.apple.com/app/id6793248729" aria-label="Download Purla on the App Store">
+        <img src="img/app-store-badge.svg" width="162" height="54" alt="Download on the App Store">
+      </a>
     </div>
 
     <div class="stage">
